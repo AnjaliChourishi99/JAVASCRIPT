@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>Diff in local and session storage</title>
+	<script type="text/javascript">
+		localStorage.setItem("key",1998);
+		sessionStorage.setItem("key",1998);
+		var local = localStorage.getItem("key");
+		alert("Local storage value : "+local);
+		var session = localStorage.getItem("key");
+		alert("session storage value : "+session);
+	</script>
+
+</head>
+</html>

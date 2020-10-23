@@ -1,0 +1,11 @@
+Local storage:
+1)Web page can be viewed simplicitily for greater storage capacity.
+2)The data is send back to the server for every HTTP request (html,images,javascript,css,etc) reducing amount of trafic between client and server
+3)Available size is 5MB which considerably more space to work with than a typical 4KB cookie.
+4)Local storage stores data with no expiration date.
+
+Session storage:
+1)It is similar to local storage
+2)changes are available per window
+3)Data is only available inside window/door in which it was set.
+4)Session storage is destroyed once the user closes the browser
