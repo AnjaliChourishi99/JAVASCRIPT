@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <body>
+         <script>
+            var p = {
+               q: "Hello"
+            }
+            function showResult(x,y) {
+               document.writeln(this.q + " " + x + y );
+            }
+            showResult.call(p, "Saina", "Nehwal"); // one or more objects as argument
+            showResult.apply(p, ["P.V.","Sindhu"]); // array as the second argument
+         </script>
+      </body>
+   </head>
+</html>

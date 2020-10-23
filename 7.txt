@@ -1,0 +1,12 @@
+call() method
+Count the number of arguments with call method. It accepts one or more arguments as objects.It calls the method, taking the owner object as argument. The keyword this refers to the ‘owner’ of the function or the object it belongs to. We can call a method which can be used on different objects.
+
+Here’s the syntax:
+call(object, “argument1”, “argument2”);
+
+apply() method 
+It calls the method, taking the owner object as argument. The keyword this refers to the ‘owner’ of the function or the object it belongs to. We can call a method which can be used on different objects.
+To use an array as an argument, use apply. It requires an array as its 2nd argument.
+
+Here’s the syntax:
+apply(object, [“argument1”, “argument[]”]);
