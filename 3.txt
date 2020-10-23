@@ -1,0 +1,12 @@
+Cookies are the data stored in small text files, on computer. When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+
+Cookies were invented to solve the problem "how to remember information about the user":
+Cookies are saved in name-value pairs like: username = John Doe
+
+# create a cookie with Javascript : 
+JavaScript can create, read, and delete cookies with the document.cookie property.
+With JavaScript, a cookie can be created like this:
+document.cookie = "username=John Doe";
+
+You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
