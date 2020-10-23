@@ -1,0 +1,35 @@
+1. Creating objects using object literal syntax
+
+var person = {
+  firstName: 'Anjali',
+  lastName: 'Chourishi'
+};
+
+2. Creating objects using the ‘new’ keyword
+
+var person = new Object();
+Now, to add properties to this object :
+person.firstName = 'Cristiano';
+person.lastName = 'Ranoldo';
+
+3.Using ‘new’ with user defined constructor function
+
+function Person(fname, lname) {
+  this.firstName = fname;
+  this.lastName = lname;
+}
+Now, anytime you want a ‘Person’ object, just do this:
+
+const personOne = new Person('James', 'Gosling');
+const personTwo = new Person('Dennis', 'Ritchie')
+
+4.Using Object.create() to create new objects
+const person = {
+  printIntroduction: function() {
+    console.log(`My name is ${this.name}. `);
+  }
+};
+const me = Object.create(person);
+me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+me.printIntroduction();
+// expected output: "My name is Matthew. "
